@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLuka's Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1c2a30;
+            font-family: 'JoganSoft-Regular', sans-serif;
+            display: flex;
+            flex-direction: column;  
+            height: 100vh;
+        }
+
+        .header {
+            font-size: 24px;
+            color: white;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .header::after {
+            content: '';
+            font-size: 18px;
+        }
+
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .portfolio img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px;
+            transition: transform 0.3s;
+        }
+
+        .portfolio img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Media Query for smaller screens */
+        @media screen and (max-width: 768px) {
+            .portfolio img {
+                max-width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://cdn.discordapp.com/attachments/1128371599066804257/1149781952531013642/Group_1.png">
+    </div>
+    <div class="portfolio">
+        <img src="https://cdn.discordapp.com/attachments/1128371599066804257/1149778300076564622/Group_2.png" alt="Project 1">
+        <img src="https://cdn.discordapp.com/attachments/1128371599066804257/1149778300412104796/Group_4.png" alt="Project 2">
+    </div>
+</body>
+</html>
